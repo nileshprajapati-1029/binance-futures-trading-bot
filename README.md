@@ -42,6 +42,66 @@ trading_bot/
 ---
 
 ## Installation
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/nileshprajapati-1029/binance-futures-trading-bot.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd binance-futures-trading-bot
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+### 4. Activate the Virtual Environment
+
+**Windows (PowerShell)**
+
+```powershell
+.\.venv\Scripts\Activate
+```
+
+**Windows (Command Prompt)**
+
+```cmd
+.venv\Scripts\activate
+```
+
+### 5. Install Required Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Create a `.env` File
+
+Create a `.env` file in the project root and add your Binance Futures Testnet API credentials:
+
+```env
+API_KEY=YOUR_BINANCE_TESTNET_API_KEY
+SECRET_KEY=YOUR_BINANCE_TESTNET_SECRET_KEY
+```
+
+### 7. Run the Application
+
+#### Place a MARKET Order
+
+```bash
+python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
+```
+
+#### Place a LIMIT Order
+
+```bash
+python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 130000
+```
 
 ### 1. Clone the Repository
 
@@ -149,8 +209,8 @@ pip install -r requirements.txt
 Create a `.env` file.
 
 ```
-API_KEY=YOUR_API_KEY
-SECRET_KEY=YOUR_SECRET_KEY
+API_KEY=
+SECRET_KEY=
 ```
 
 ---
