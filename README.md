@@ -103,66 +103,7 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 130000
 ```
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/YOUR_USERNAME/binance-futures-trading-bot.git
-```
-
-### 2. Go to the Project Folder
-
-```bash
-cd binance-futures-trading-bot
-```
-
-### 3. Create a Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-### 4. Activate the Virtual Environment
-
-**Windows (PowerShell)**
-
-```powershell
-.\.venv\Scripts\Activate
-```
-
-**Windows (CMD)**
-
-```cmd
-.venv\Scripts\activate
-```
-
-### 5. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 6. Create a `.env` File
-
-Create a `.env` file in the project root and add your Binance Futures Testnet API credentials.
-
-```env
-API_KEY=YOUR_API_KEY
-SECRET_KEY=YOUR_SECRET_KEY
-```
-
-### 7. Run the Application
-
-#### MARKET Order
-
-```bash
-python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
-```
-
-#### LIMIT Order
-
-```bash
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 130000
-```
 
 ### Clone repository
 
